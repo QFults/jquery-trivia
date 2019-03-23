@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav id="triviaNav">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Trivia Quiz</a>
+        <ul class="right hide-on-med-and-down">
+          <li id="timer">Time Left : <span id="time">120</span> seconds</li>
+          <li><a id="stateChng" class="waves-effect waves-light btn"><span id="stateMsg">Start</span> Quiz</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="trivia" class="container">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Click The Start Button Above To Begin The Trivia Quiz!</span>
+      </div>
+      </div>
+      <div id="questions"></div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=' crossorigin='anonymous'></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+* {
+  color: rgb(227, 227, 227) !important
+}
+
+body {
+  background: rgb(227, 227, 227)
+}
+
+.nav-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#timer {
+  display: none;
+}
+
+#triviaNav {
+  background: rgb(9, 9, 9)
+}
+
+#stateChng {
+  background: rgb(35, 35, 35)
+}
+
+#trivia {
+  background: rgb(35, 35, 35);
+  width: 90%;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  min-height: 140px;
+}
+
+.rightAns {
+  color: rgb(173, 5, 5) !important;
+  display: none;
+}
+
+.card {
+  margin-right: 20px;
+  background: rgb(55, 55, 55);
+}
+#questions {
+  display: none
+}
