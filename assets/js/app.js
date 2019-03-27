@@ -16,17 +16,17 @@ const startGame = _ => {
   countdown = setInterval(() => {
     time--
     if (time) {
-      $('#time').innerHTML = time    
+      $('#time').innerHTML = time
     } else {
       endGame()
     }
-  }, 1000);
+  }, 1000)
 }
 const endGame = _ => {
   stateChngBtns(isGame)
   clearInterval(countdown)
   time = 120
-  $('#time').innerHTML = time 
+  $('#time').innerHTML = time
   $('.rightAns').each((i, elem) => {
     $(elem).css('display', 'block')
   })
@@ -63,13 +63,12 @@ $.ajax('https://opentdb.com/api.php?amount=15')
       hiddenAnswer.addClass('rightAns')
       hiddenAnswer.text(q.correct_answer)
       qElem.append(hiddenAnswer)
-      $('#questions').append(qElem)    
+      $('#questions').append(qElem)
     })
   })
   .catch(e => console.error(e))
 
-  $(document).on('click', '.radios',e => {
-     let index = parseInt(e.target.name)
-     questions[index].chosenAnswer = e.target.dataset.value
-  })
-  
+$(document).on('click', '.radios', e => {
+  let index = parseInt(e.target.name)
+  questions[index].chosenAnswer = e.target.dataset.value
+})
