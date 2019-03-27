@@ -15,7 +15,6 @@ const startGame = _ => {
   stateChngBtns(isGame)
   countdown = setInterval(() => {
     time--
-    console.log(time)
     if (time) {
       $('#time').html(time)
     } else {
