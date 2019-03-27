@@ -15,8 +15,9 @@ const startGame = _ => {
   stateChngBtns(isGame)
   countdown = setInterval(() => {
     time--
+    console.log(time)
     if (time) {
-      $('#time').innerHTML = time
+      $('#time').html(time)
     } else {
       endGame()
     }
@@ -26,7 +27,7 @@ const endGame = _ => {
   stateChngBtns(isGame)
   clearInterval(countdown)
   time = 120
-  $('#time').innerHTML = time
+  $('#time').html(time)
   $('.rightAns').each((i, elem) => {
     $(elem).css('display', 'block')
   })
